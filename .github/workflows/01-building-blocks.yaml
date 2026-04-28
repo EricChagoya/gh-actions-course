@@ -14,10 +14,10 @@ jobs: # This is what jobs are included in our workflow
     echo-goodbye: 
         runs-on: ubuntu-latest
         steps:
-            - name: Failed step
+            - name: Successful step
               run: | # The pipe is required for multiple lines
                 echo "I will fail"
-                exit 1
+                exit 0
             - name: Say Goodbye
               run: echo "Goodbye!"
 
