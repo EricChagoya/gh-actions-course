@@ -12,4 +12,12 @@ jobs: # This is what jobs are included in our workflow
             - name: Say Hello
               run: echo "Hello, World!"
     echo-goodbye: 
+        runs-on: ubuntu-latest
+        steps:
+            - name: Failed step
+              run: | # The pipe is required for multiple lines
+                echo "I will fail"
+                exit 1
+            - name: Say Goodbye
+              run: echo "Goodbye!"
 
