@@ -9,6 +9,13 @@ on:
     #         - pr_pull_branch
     workflow_dispatch
 
+    # push:
+    #     branches:
+    #         - main
+    #         - 'release/**'
+    #     paths-ignore:
+    #         - 'docs/**'
+
 
 jobs: 
     echo: 
