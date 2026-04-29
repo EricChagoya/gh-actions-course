@@ -1,8 +1,8 @@
-name: 05 - 1 - Event Filters and Activity Types
+name: 05 - 2 - Event Filters and Activity Types
 on: 
     pull_request:
         types:
-            - opened
+            - closed
             - synchronize
         branches: 
             - main
@@ -13,4 +13,4 @@ jobs:
     echo: 
         runs-on: ubuntu-latest
         steps: 
-            - run: echo "Running whenever a PR is opened or synchronized and base branch is main"
+            - run: echo "Running whenever a PR is closed or synchronized and base branch is main"
