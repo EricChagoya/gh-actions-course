@@ -1,6 +1,7 @@
 name: 01 - Building Blocks # The name of the workflow
 
-on: push
+# on: push
+on: workflow_dispatch
 # This is the trigger of the workflow
 # Whenever we push to the online repository, then execute this workflow
 
