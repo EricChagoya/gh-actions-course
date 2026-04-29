@@ -5,6 +5,11 @@ on: push
 jobs: 
     build: 
         runs-on: ubuntu-latest
+        # defaults: 
+        #     # So everytime we use the run command, it will use this working-directory
+        #     # I left it uncommented out in the bottom
+        #     run: 
+        #         working-directory: 04-using-actions/react-app
         steps:
             - name: Checkout Code
               uses: actions/checkout@v4
@@ -17,4 +22,7 @@ jobs:
             - name: Install Dependencies
               run: npm ci
               # We will run the 'npm ci' command inside of this directory
+              working-directory: 04-using-actions/react-app
+            - name: Run Unit Test
+              run: npm run test
               working-directory: 04-using-actions/react-app
