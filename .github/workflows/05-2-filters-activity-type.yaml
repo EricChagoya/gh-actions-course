@@ -22,3 +22,4 @@ jobs:
         runs-on: ubuntu-latest
         steps: 
             - run: echo "Running whenever a PR is closed or synchronized and base branch is main"
+

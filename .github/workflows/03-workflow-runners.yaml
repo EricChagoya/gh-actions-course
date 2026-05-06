@@ -17,7 +17,7 @@ jobs:
               shell: bash # You access environment variables differently in Windows
               # So you can use a bash script to maintain consistency
               run: |
-                echo "This job is running on an Windows runner."
+                echo "This job is running on a Windows runner."
                 echo "Runner OS: $RUNNER_OS"
     mac-echo:
         runs-on: macos-latest
