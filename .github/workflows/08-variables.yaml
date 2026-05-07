@@ -55,6 +55,7 @@ jobs:
           run: |
             echo "Org var: ${{vars.UNDEFINED_VAR || 'default value'}}"
             echo "Org var: ${{env.UNDEFINED_VAR_WITH_DEFAULT}}"
+          # ${{ github.event_type == 'push' && env.TARGET_ENVIRONMENT != '' }}
             
 
 
