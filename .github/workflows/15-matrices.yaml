@@ -47,4 +47,8 @@ jobs:
                 include: # include does not override any values we previously provided 
                   - color: red
                     shape: triangle
+        steps: 
+          - name: Dummy step
+            run: echo "${{matrix.color}}-${{matrix.shape}}-${{matrix.size}}"
+
 
