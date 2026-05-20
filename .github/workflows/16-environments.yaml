@@ -10,7 +10,7 @@ on:
 
 jobs:
     deploy-staging:
-        runs-on: ubutun-latest
+        runs-on: ubuntu-latest
         environment: staging
         env: 
             my-env-value: ${{vars.MY_ENV_VALUE || 'default_value'}}
